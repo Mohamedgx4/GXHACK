@@ -5,19 +5,9 @@ if you want to hacking with ngrok or lacalx you must make port to 4444 because t
 installing:
 For Termux :
 
-$ pkg update && pkg upgrade 
-$ pkg install git wget 
-$ git clone https://github.com/Mohamedgx4/payload-generator.git
-$ cd payload-generator
-$ chmod +x hack-gx.sh 
-$ ./hack-gx.sh
+$ pkg update && pkg upgrade && pkg install git wget && git clone https://github.com/Mohamedgx4/payload-generator.git && cd payload-generator && chmod +x hack-gx.sh && ./hack-gx.sh
 
 For Linux :
 
-$ apt update 
-$ apt install git wget 
-$ git clone https://github.com/Mohamedgx4/payload-generator.git
-$ cd payload-generator 
-$ chmod +x hack-gx.sh
-$ ./hack-gx.sh 
+$ apt update && apt install git wget && git clone https://github.com/Mohamedgx4/payload-generator.git && cd payload-generator && chmod +x hack-gx.sh && ./hack-gx.sh 
 
