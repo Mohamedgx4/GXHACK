@@ -9,5 +9,5 @@ $ pkg update && pkg upgrade && pkg install git wget && git clone https://github.
 
 For Linux :
 
-$ apt update && apt install git wget && git clone https://github.com/Mohamedgx4/payload-generator.git && cd payload-generator && chmod +x hack-gx.sh && ./hack-gx.sh 
+$ sudo apt update && sudo apt install git wget && git clone https://github.com/Mohamedgx4/payload-generator.git && cd payload-generator && chmod +x hack-gx.sh && ./hack-gx.sh 
 
